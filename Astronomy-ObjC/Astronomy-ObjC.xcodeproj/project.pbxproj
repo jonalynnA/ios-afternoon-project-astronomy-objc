@@ -17,7 +17,7 @@
 		4F1A96EB23DFA0AF00AD3BC3 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1A96EA23DFA0AF00AD3BC3 /* DetailViewController.swift */; };
 		4F1A96ED23DFAFB700AD3BC3 /* MainCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1A96EC23DFAFB700AD3BC3 /* MainCollectionViewController.swift */; };
 		4F1A96F323DFB04600AD3BC3 /* CCCSolDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F1A96F223DFB04600AD3BC3 /* CCCSolDescription.m */; };
-		4F1A96F623DFB05E00AD3BC3 /* CCMarsRover.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F1A96F523DFB05E00AD3BC3 /* CCMarsRover.m */; };
+		4F1A96F623DFB05E00AD3BC3 /* CCCMarsRover.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F1A96F523DFB05E00AD3BC3 /* CCCMarsRover.m */; };
 		4F1A96F823DFB09000AD3BC3 /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1A96F723DFB09000AD3BC3 /* Camera.swift */; };
 		4F1A96FB23DFB0B000AD3BC3 /* CCCMarsPhotoReference.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F1A96FA23DFB0B000AD3BC3 /* CCCMarsPhotoReference.m */; };
 		4F1A96FE23DFB0F200AD3BC3 /* CCCMarsRoverClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F1A96FD23DFB0F200AD3BC3 /* CCCMarsRoverClient.m */; };
@@ -45,7 +45,7 @@
 		4F1A96F123DFB04600AD3BC3 /* CCCSolDescription.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCCSolDescription.h; sourceTree = "<group>"; };
 		4F1A96F223DFB04600AD3BC3 /* CCCSolDescription.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCCSolDescription.m; sourceTree = "<group>"; };
 		4F1A96F423DFB05E00AD3BC3 /* CCCMarsRover.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCCMarsRover.h; sourceTree = "<group>"; };
-		4F1A96F523DFB05E00AD3BC3 /* CCMarsRover.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCMarsRover.m; sourceTree = "<group>"; };
+		4F1A96F523DFB05E00AD3BC3 /* CCCMarsRover.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCCMarsRover.m; sourceTree = "<group>"; };
 		4F1A96F723DFB09000AD3BC3 /* Camera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
 		4F1A96F923DFB0B000AD3BC3 /* CCCMarsPhotoReference.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCCMarsPhotoReference.h; sourceTree = "<group>"; };
 		4F1A96FA23DFB0B000AD3BC3 /* CCCMarsPhotoReference.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCCMarsPhotoReference.m; sourceTree = "<group>"; };
@@ -124,7 +124,7 @@
 				4F1A96F123DFB04600AD3BC3 /* CCCSolDescription.h */,
 				4F1A96F223DFB04600AD3BC3 /* CCCSolDescription.m */,
 				4F1A96F423DFB05E00AD3BC3 /* CCCMarsRover.h */,
-				4F1A96F523DFB05E00AD3BC3 /* CCMarsRover.m */,
+				4F1A96F523DFB05E00AD3BC3 /* CCCMarsRover.m */,
 				4F1A96F923DFB0B000AD3BC3 /* CCCMarsPhotoReference.h */,
 				4F1A96FA23DFB0B000AD3BC3 /* CCCMarsPhotoReference.m */,
 				4F1A96F723DFB09000AD3BC3 /* Camera.swift */,
@@ -240,7 +240,7 @@
 				4F1A96E323DF9F5A00AD3BC3 /* main.m in Sources */,
 				4F1A96D523DF9F5700AD3BC3 /* SceneDelegate.m in Sources */,
 				4F1A96F323DFB04600AD3BC3 /* CCCSolDescription.m in Sources */,
-				4F1A96F623DFB05E00AD3BC3 /* CCMarsRover.m in Sources */,
+				4F1A96F623DFB05E00AD3BC3 /* CCCMarsRover.m in Sources */,
 				4F1A970923DFB26C00AD3BC3 /* CCCFetchPhotoOperation.m in Sources */,
 				4F1A96FE23DFB0F200AD3BC3 /* CCCMarsRoverClient.m in Sources */,
 				4F1A970223DFB1E600AD3BC3 /* CCCCache.m in Sources */,

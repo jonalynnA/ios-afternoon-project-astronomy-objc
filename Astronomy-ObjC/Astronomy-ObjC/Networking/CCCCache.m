@@ -9,6 +9,31 @@
 #import "CCCCache.h"
 
 
-@implementation NSCache (CCCCache)
+@interface CCCCache ()
 
+
+@property (nonatomic) NSCache *cache;
+
+@end
+
+@implementation CCCCache
+
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        _cache = [[NSCache alloc] init];
+    }
+    return self;
+}
+
+- (void)cacheValueForKey:(NSString *)key value:(NSData *)value {
+    if (value) {
+        [self.cache setObject:value forKey:key];
+    }
+}
+
+- (NSData *)valueForKey:(NSString *)key {
+    return [self.cache objectForKey:key];
+}
 @end

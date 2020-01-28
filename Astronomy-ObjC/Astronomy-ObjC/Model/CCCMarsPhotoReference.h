@@ -8,10 +8,17 @@
 
 #import <Foundation/Foundation.h>
 
-NS_ASSUME_NONNULL_BEGIN
-
+@class Camera;
 @interface NSObject (CCCMarsPhotoReference)
 
+@property (nonnull) NSNumber *refernceId;
+@property (nonnull) NSNumber *sol;
+@property (nonnull) Camera *camera;
+
+@property (nonnull) NSDate *earthDate;
+@property (nonnull) NSURL *imageURL;
+
+- (instancetype)initWithDictionary:(NSDictionary *_Nonnull)dictionary;
 @end
 
-NS_ASSUME_NONNULL_END
+

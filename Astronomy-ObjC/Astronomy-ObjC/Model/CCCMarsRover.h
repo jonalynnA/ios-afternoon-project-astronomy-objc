@@ -11,7 +11,19 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface NSObject (CCCMarsRover)
+@interface CCCMarsRover : NSObject
+
+@property NSString *name;
+@property NSDate *launchDate;
+@property NSDate *landingDate;
+@property NSString *status;
+@property NSNumber *maxSol;
+@property NSDate *maxDate;
+@property NSNumber *numberOfPhotos;
+@property NSArray<CCCSolDescription *> *solDescriptions;
+@property (nonatomic) NSDateFormatter *dateFormatter;
+
+- (instancetype)initWithDictionary:(NSDictionary *)dictionary;
 
 @end
 

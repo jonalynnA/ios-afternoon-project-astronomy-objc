@@ -7,3 +7,18 @@
 //
 
 import Foundation
+
+@objc(Camera)
+class Camera: NSObject {
+    let id: Int
+    let name: String
+    let roverId: Int
+    let fullName: String
+
+    @objc init(id: Int, name: String, roverId: Int, fullName: String) {
+        self.id = id
+        self.name = name
+        self.fullName = fullName
+        self.roverId = roverId
+    }
+}

@@ -1,5 +1,5 @@
 //
-//  NSCache+CCCCache.h
+//  CCCCache.h
 //  Astronomy-ObjC
 //
 //  Created by Jonalynn Masters on 1/27/20.
@@ -8,10 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-NS_ASSUME_NONNULL_BEGIN
-
-@interface NSCache (CCCCache)
+@interface CCCCache: NSCache
+- (void)cacheValueForKey:(NSString * _Nonnull)key value:(NSData * _Nonnull)value;
+- (NSData * _Nullable)valueForKey:(NSString * _Nonnull)key;
 
 @end
-
-NS_ASSUME_NONNULL_END

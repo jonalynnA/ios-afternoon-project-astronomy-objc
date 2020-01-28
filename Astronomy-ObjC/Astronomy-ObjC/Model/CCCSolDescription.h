@@ -8,10 +8,15 @@
 
 #import <Foundation/Foundation.h>
 
-NS_ASSUME_NONNULL_BEGIN
 
-@interface NSObject (CCCSolDescription)
 
+@interface CCCSolDescription : NSObject
+
+@property (nonnull) NSNumber *sol;
+@property (nonnull) NSNumber *totalPhotos;
+@property (nonnull) NSArray<NSString *> *cameras;
+
+- (instancetype)initWithDictionary:(NSDictionary *_Nonnull)dictionary;
 @end
 
-NS_ASSUME_NONNULL_END
+

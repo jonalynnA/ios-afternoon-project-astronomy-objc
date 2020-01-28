@@ -10,4 +10,14 @@
 
 @implementation NSObject (CCCSolDescription)
 
+- (instancetype)initWithDictionary:(NSDictionary *)dictionary {
+if (self = [super init]) {
+    _sol = dictionary[@"sol"];
+    _totalPhotos = dictionary[@"total_photos"];
+    _cameras = dictionary[@"cameras"];
+    }
+    return self;
+}
+
+
 @end

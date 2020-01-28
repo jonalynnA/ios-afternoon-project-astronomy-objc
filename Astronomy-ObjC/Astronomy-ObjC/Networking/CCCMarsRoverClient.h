@@ -7,3 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+
+@interface CCCMarsRoverClient : NSObject
+
+@end
+
