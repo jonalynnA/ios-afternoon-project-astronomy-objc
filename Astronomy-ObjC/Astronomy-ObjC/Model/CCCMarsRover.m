@@ -22,15 +22,22 @@
 }
 
 - (instancetype)initWithDictionary:(NSDictionary *)dictionary {
-    if (self = [super init]) {
-        _name = dictionary[@"name"];
-        _launchDate = dictionary[@"launch_date"];
-        _landingDate = dictionary[@"landing_date"];
-        _status = dictionary[@"status"];
-        _maxSol = dictionary[@"max_sol"];
-        _maxDate = dictionary[@"max_date"];
-        _numberOfPhotos = dictionary[@"total_photos"];
-        _solDescriptions = dictionary[@"photos"];
+if (self = [super init]) {
+    _name = dictionary[@"name"];
+    _launchDate = dictionary[@"launch_date"];
+    _landingDate = dictionary[@"landing_date"];
+    _status = dictionary[@"status"];
+    _maxSol = dictionary[@"max_sol"];
+    _maxDate = dictionary[@"max_date"];
+    _numberOfPhotos = dictionary[@"total_photos"];
+    NSArray *solDescriptionsArray = dictionary[@"photos"];
+    NSMutableArray *solArray = [[NSMutableArray alloc] init];
+    for (NSDictionary *solDictionary in solDescriptionsArray) {
+        
+        CCCSolDescription *solDescription = [[CCCSolDescription alloc] initWithDictionary:solDictionary];
+        [solArray addObject:solDescription];
+    }
+    _solDescriptions = [solArray copy];
     }
     return self;
 }

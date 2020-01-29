@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @class Camera;
-@interface NSObject (CCCMarsPhotoReference)
+@interface CCCMarsPhotoReference : NSObject
 
 @property (nonnull) NSNumber *refernceId;
 @property (nonnull) NSNumber *sol;

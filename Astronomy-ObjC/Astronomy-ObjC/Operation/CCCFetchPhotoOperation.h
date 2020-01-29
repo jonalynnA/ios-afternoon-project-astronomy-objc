@@ -8,10 +8,15 @@
 
 #import <Foundation/Foundation.h>
 
-NS_ASSUME_NONNULL_BEGIN
+@class CCCMarsPhotoReference;
 
-@interface NSOperation (CCCFetchPhotoOperation)
+
+@interface CCCFetchPhotoOperation : NSOperation
+@property NSData *imageData;
+- (instancetype)initWithPhotoReference:(CCCMarsPhotoReference *)photoReference;
+@property (nonatomic) BOOL isExecuting;
+@property (nonatomic) BOOL isFinished;
+@property (nonatomic) BOOL isCancelled;
 
 @end
 
-NS_ASSUME_NONNULL_END

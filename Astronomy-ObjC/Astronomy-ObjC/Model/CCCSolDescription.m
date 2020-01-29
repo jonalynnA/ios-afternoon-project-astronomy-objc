@@ -8,7 +8,7 @@
 
 #import "CCCSolDescription.h"
 
-@implementation NSObject (CCCSolDescription)
+@implementation CCCSolDescription
 
 - (instancetype)initWithDictionary:(NSDictionary *)dictionary {
 if (self = [super init]) {

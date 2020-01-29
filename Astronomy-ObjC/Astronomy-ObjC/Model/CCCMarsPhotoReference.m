@@ -7,6 +7,7 @@
 //
 
 #import "CCCMarsPhotoReference.h"
+#import "Astronomy_ObjC-Swift.h"
 
 @implementation CCCMarsPhotoReference
 
